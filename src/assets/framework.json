@@ -1,0 +1,13 @@
+{
+  "aspects": {
+    "cognitive": ["analytical", "emotional"],
+    "personality": ["introverted", "extroverted"],
+    "ideology": ["innovative", "traditional"]
+  },
+  "roles": {
+    "strategist": ["analytical", "introverted"],
+    "negotiator": ["analytical", "extroverted"],
+    "advocate": ["emotional", "traditional"],
+    "disruptor": ["emotional", "innovative"]
+  }
+}

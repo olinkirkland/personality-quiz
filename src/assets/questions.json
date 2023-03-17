@@ -1,0 +1,42 @@
+[
+  {
+    "question": "When hiking, you are more likely to:",
+    "answers": [
+      {
+        "text": "Scribble notes on my experiences and surroundings.",
+        "aspects": {
+          "cognitive": -2,
+          "personality": -1
+        }
+      },
+      {
+        "text": "Snap photo after photo of the scenery.",
+        "aspects": {
+          "cognitive": -1,
+          "personality": -1
+        }
+      },
+      {
+        "text": "Ponder how the lakes and streams connect to ocean waters.",
+        "aspects": {
+          "cognitive": 2,
+          "personality": 0
+        }
+      },
+      {
+        "text": "Think about how to bring nature back to our big cities.",
+        "aspects": {
+          "cognitive": 1,
+          "personality": 2
+        }
+      },
+      {
+        "text": "Find inspiration for my next creative project.",
+        "aspects": {
+          "cognitive": -3,
+          "personality": -2
+        }
+      }
+    ]
+  }
+]
