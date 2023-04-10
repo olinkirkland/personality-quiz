@@ -20,7 +20,7 @@
         "text": "Ponder how the lakes and streams connect to ocean waters.",
         "aspects": {
           "cognitive": 2,
-          "personality": 0
+          "personality": 1
         }
       },
       {
@@ -39,6 +39,32 @@
         "flags": {
           "is-a-creative-person": true
         }
+      }
+    ]
+  },
+  {
+    "prompt": "When it comes to environmental issues, do you:",
+    "options": [
+      {
+        "text": "Analyze the data and facts to understand the situation.",
+        "aspects": { "cognitive": 2, "ideology": -2 }
+      },
+      {
+        "text": "Rely on my gut feelings and emotions to guide my reactions.",
+        "aspects": { "cognitive": -2, "ideology": 2 }
+      }
+    ]
+  },
+  {
+    "prompt": "When considering energy consumption, do you:",
+    "options": [
+      {
+        "text": "Focus on reducing my personal energy usage and carbon footprint.",
+        "aspects": { "personality": 2, "ideology": 2 }
+      },
+      {
+        "text": "Believe that it's more important for governments and corporations to take action on energy consumption.",
+        "aspects": { "personality": -2, "ideology": 2 }
       }
     ]
   }

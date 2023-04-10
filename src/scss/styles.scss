@@ -13,6 +13,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: serif;
+  font-size: 1.2rem;
+}
+
+pre {
+  border-left: 6px solid $orange;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: $light;
+  color: $dark;
+  font-family: monospace;
+  font-size: 0.8rem;
 }
 
 ul {
@@ -29,12 +40,12 @@ ul {
 h2 {
   font-size: 1.6rem;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 button {
   border: none;
   padding: 1.2rem 2.4rem;
-  font-size: 1.2rem;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 
@@ -43,12 +54,10 @@ button {
 
 .quiz-question {
   padding: 2rem;
-  > h2 {
-    margin-bottom: 2rem;
-  }
 
   > ul.quiz-question__options {
     gap: 1rem;
+
     > li button {
       background-color: $light;
       color: $dark;
@@ -99,4 +108,8 @@ button {
       }
     }
   }
+}
+
+.quiz-results {
+  margin: 2rem;
 }

@@ -3,28 +3,17 @@ import Profile from './Profile';
 
 function Quiz({ questions }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState(
-    new Array(questions.length).fill(null)
-  );
 
   const handleAnswer = (index, answer) => {
-    setAnswers((prevAnswers) => {
-      const newAnswers = [...prevAnswers];
-      newAnswers[index] = answer;
-      return newAnswers;
-    });
+    Profile.addAnswer(questions[index], answer);
     setCurrentQuestion((prevQuestion) => prevQuestion + 1);
-  };
-
-  const handleSubmit = () => {
-    Profile.setAnswers(questions, answers);
   };
 
   if (currentQuestion >= questions.length) {
     return (
-      <div>
-        <p>Quiz completed!</p>
-        <button onClick={handleSubmit}>Submit Answers</button>
+      <div className="quiz-results">
+        <h2>Thanks for taking the quiz!</h2>
+        <pre>{JSON.stringify(Profile.getResults(), null, 2)}</pre>
       </div>
     );
   }
