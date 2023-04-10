@@ -1,7 +1,7 @@
 [
   {
-    "question": "When hiking, you are more likely to:",
-    "answers": [
+    "prompt": "When hiking, you are more likely to:",
+    "options": [
       {
         "text": "Scribble notes on my experiences and surroundings.",
         "aspects": {
@@ -35,6 +35,9 @@
         "aspects": {
           "cognitive": -3,
           "personality": -2
+        },
+        "flags": {
+          "is-a-creative-person": true
         }
       }
     ]
